@@ -14,13 +14,6 @@ public class google {
 
     static WebDriver driver;
     public String googleurl = "https://www.google.se/";
-    static String LoginHeader;
-    static String DisplayName;
-    static String AgreementPartnerHP;
-
-    WebElement element;
-    WebDriverWait wait;
-
 
     @BeforeTest
     public void setup() throws Exception {
@@ -32,7 +25,7 @@ public class google {
 
     //To verify the Title on the webpage
     @Test(priority = 1)
-    public void VerifyLoginPageTitle() throws InterruptedException {
+    public void VerifyGoogleTitle() throws InterruptedException {
         driver.get(googleurl);
 
         //Wait
